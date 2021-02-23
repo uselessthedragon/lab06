@@ -81,9 +81,20 @@ namespace logic
             int num1Numerator = num1.Numerator * num2.Denominator;
             int num2Numerator = num2.Numerator * num1.Denominator;
 
-            //return new RationalNumber(num1Numerator - num2Numerator, num1.Denominator * num2.Denominator);
+            return new RationalNumber(num1Numerator - num2Numerator, num1.Denominator * num2.Denominator);
+        }
+
+        public static RationalNumber operator * (RationalNumber num1, RationalNumber num2)
+        {
+
+            //return new RationalNumber(num1.Numerator * num2.Numerator, num1.Denominator * num2.Denominator);
             return new RationalNumber();
         }
 
+        public static RationalNumber operator / (RationalNumber num1, RationalNumber num2)
+        {
+            //return new RationalNumber();
+            return new RationalNumber(num1.Numerator * num2.Denominator, num1.Denominator * num2.Numerator);
+        }
     }
 }

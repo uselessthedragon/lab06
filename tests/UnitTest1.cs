@@ -184,8 +184,46 @@ namespace tests
             RationalNumber RatNum;
             RationalNumber RatNum2;
 
-            RatNum =  new RationalNumber(3,4) - new RationalNumber (1, 4);
-            RatNum2 = new RationalNumber(1, 2);
+            RatNum =  new RationalNumber(1,3) - new RationalNumber (1, 4);
+            RatNum2 = new RationalNumber(1, 12);
+            
+            if (RatNum.Equals(RatNum2))
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+        }
+        [Test]
+        public void RationalMultiply()
+        {
+            RationalNumber RatNum;
+            RationalNumber RatNum2;
+
+            RatNum =  new RationalNumber(1,2) * new RationalNumber (1, 2);
+            RatNum2 = new RationalNumber(1, 4);
+            
+            if (RatNum.Equals(RatNum2))
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+        }
+        
+        [Test]
+        public void RationalDivide()
+        {
+            RationalNumber RatNum;
+            RationalNumber RatNum2;
+
+            RatNum =  new RationalNumber(1,3) / new RationalNumber (1, 4);
+            RatNum2 = new RationalNumber(4, 3);
             
             if (RatNum.Equals(RatNum2))
             {
