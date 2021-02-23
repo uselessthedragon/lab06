@@ -164,7 +164,7 @@ namespace tests
         {
             RationalNumber RatNum;
             RationalNumber RatNum2;
-            
+
             RatNum =  new RationalNumber(1,2) + new RationalNumber (1, 2);
             RatNum2 = new RationalNumber(1, 1);
             
@@ -172,6 +172,31 @@ namespace tests
             {
                 Assert.Pass();
             }
+            else
+            {
+                Assert.Fail();
+            }
         }
+        
+        [Test]
+        public void RationalMinus()
+        {
+            RationalNumber RatNum;
+            RationalNumber RatNum2;
+
+            RatNum =  new RationalNumber(3,4) - new RationalNumber (1, 4);
+            RatNum2 = new RationalNumber(1, 2);
+            
+            if (RatNum.Equals(RatNum2))
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+        }
+
     }
 }
