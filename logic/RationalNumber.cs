@@ -87,14 +87,13 @@ namespace logic
         public static RationalNumber operator * (RationalNumber num1, RationalNumber num2)
         {
 
-            //return new RationalNumber(num1.Numerator * num2.Numerator, num1.Denominator * num2.Denominator);
-            return new RationalNumber();
+            return new RationalNumber(num1.Numerator * num2.Numerator, num1.Denominator * num2.Denominator);
         }
 
         public static RationalNumber operator / (RationalNumber num1, RationalNumber num2)
         {
-            //return new RationalNumber();
-            return new RationalNumber(num1.Numerator * num2.Denominator, num1.Denominator * num2.Numerator);
+            return new RationalNumber();
+            //return new RationalNumber(num1.Numerator * num2.Denominator, num1.Denominator * num2.Numerator);
         }
     }
 }
