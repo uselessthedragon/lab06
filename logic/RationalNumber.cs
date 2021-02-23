@@ -100,8 +100,7 @@ namespace logic
             double num1Floating = (double)num1.Numerator / num1.Denominator;
             double num2Floating = (double)num2.Numerator / num2.Denominator;
 
-            //return (num1Floating < num2Floating);
-            return false;
+            return (num1Floating < num2Floating);
         }
 
         public static bool operator > (RationalNumber num1 , RationalNumber num2)
