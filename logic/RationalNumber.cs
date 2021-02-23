@@ -6,7 +6,7 @@ namespace logic
     {
         public RationalNumber()
         {
-            
+
         }
         public RationalNumber(int numerator, int denominator)
         {
@@ -70,7 +70,7 @@ namespace logic
 
         public static RationalNumber operator + (RationalNumber num1, RationalNumber num2)
         {
-            return new RationalNumber();
+            return new RationalNumber(num1.Numerator + num2.Numerator, num1.Denominator + num2.Denominator);
         }
 
     }
