@@ -276,5 +276,44 @@ namespace tests
 
         }
 
+        [Test]
+        public void RationalEqualTo()
+        {
+            RationalNumber RatNum;
+            RationalNumber RatNum2;
+
+            RatNum =  new RationalNumber(1, 4);
+            RatNum2 = new RationalNumber(1, 4);
+            
+            if (RatNum == RatNum2)
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+        }
+        [Test]
+        public void RationalNotEqualTo()
+        {
+            RationalNumber RatNum;
+            RationalNumber RatNum2;
+
+            RatNum =  new RationalNumber(1, 3);
+            RatNum2 = new RationalNumber(1, 4);
+            
+            if (RatNum != RatNum2)
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+        }
+
     }
 }
