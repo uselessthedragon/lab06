@@ -236,5 +236,25 @@ namespace tests
 
         }
 
+        [Test]
+        public void RationalLessThan()
+        {
+            RationalNumber RatNum;
+            RationalNumber RatNum2;
+
+            RatNum =  new RationalNumber(1,4);
+            RatNum2 = new RationalNumber(1, 3);
+            
+            if (RatNum < RatNum2)
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+        }
+
     }
 }

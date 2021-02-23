@@ -92,8 +92,25 @@ namespace logic
 
         public static RationalNumber operator / (RationalNumber num1, RationalNumber num2)
         {
-            return new RationalNumber();
-            //return new RationalNumber(num1.Numerator * num2.Denominator, num1.Denominator * num2.Numerator);
+            return new RationalNumber(num1.Numerator * num2.Denominator, num1.Denominator * num2.Numerator);
+        }
+
+        public static bool operator < (RationalNumber num1 , RationalNumber num2)
+        {
+            double num1Floating = (double)num1.Numerator / num1.Denominator;
+            double num2Floating = (double)num2.Numerator / num2.Denominator;
+
+            //return (num1Floating < num2Floating);
+            return false;
+        }
+
+        public static bool operator > (RationalNumber num1 , RationalNumber num2)
+        {
+            double num1Floating = (double)num1.Numerator / num1.Denominator;
+            double num2Floating = (double)num2.Numerator / num2.Denominator;
+
+            //return (num1Floating < num2Floating);
+            return false;
         }
     }
 }
